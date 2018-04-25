@@ -22,6 +22,7 @@
             body
             {
                 background-image: url(../public/imagenes/fondo.jpg);
+                background-size:cover;
             }
         </style>
 
@@ -59,6 +60,12 @@
             <button type="submit" class="btn btn-primary">Añadir</button>
 
             {!! Form::close() !!}
+            <h3><a href="/deportes/public/listadoDeportes">Lista de deportes</a></h3>
+        </div>
+
+        <!--CONTENEDOR-->
+        <div class="container">
+            @yield('content')
         </div>
         
         

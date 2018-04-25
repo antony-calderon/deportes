@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::post('registrarDeporte','deportesController@registro');
+Route::get('listadoDeportes','deportesController@index');

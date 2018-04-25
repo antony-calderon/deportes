@@ -15,7 +15,16 @@ class deportesController extends Controller
 		$deportesvarios['deporte'] = $request['deporte'];
 		$deportesvarios['padre'] = $request['padre'];
 		$deportesvarios['descripcion'] = $request['descripcion'];
-		$deportesvarios->save();    	
+		$deportesvarios->save();   
 
+		echo "<h1>Deporte registrado!!!</h1>";
+    }
+    public function index()
+    {
+        //constructor de consultas
+    	//$deportesvarios = \DB::table('deportesvarios')->select('id','deporte')->get();
+        //eloquent
+        $deportesvarios = deportesvario::all();
+        return view('listadoDeportes',compact('deportesvarios'));
     }
 }
