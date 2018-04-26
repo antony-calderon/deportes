@@ -23,34 +23,19 @@
 				</tr>
 				@endforeach
 			</table>
-    		<!--@foreach ($deportesvarios as $deportesvario)
-    		<div class="row">
-    			<div class="col-sm">
-                    <label class="text-light">Id</label>	
-                    {{$deportesvario->id}}             
-                </div>
-                <div class="col-sm">
-                    <label class="text-light">Deporte</label>	
-                    {{$deportesvario->deporte}}             
-                </div>
-                <div class="col-sm">
-                    <label class="text-light">Padre</label>
-                    {{$deportesvario->padre}}             
-                </div>
-                <div class="col-sm">
-                    <label class="text-light">Descripcion</label>
-                    {{$deportesvario->descripcion}}        
-                </div>
-            </div>
-            @endforeach-->
-    		<!--@foreach ($deportesvarios as $deportesvario)
-    			<li>{{$deportesvario->id}}</li>
-    			{{$deportesvario->deporte}}
-    			{{$deportesvario->padre}}
-    			{{$deportesvario->descripcion}}
-
-    		@endforeach-->
     	</ul>
+    </div>
+</font>
+
+<font color="white">
+    <div class="container">
+        <H2>Listado ordenado</H2>
+
+        <ul>
+            
+            
+            
+        </ul>
     </div>
 </font>
 @stop

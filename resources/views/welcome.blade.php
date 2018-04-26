@@ -57,17 +57,26 @@
 
             <br>
 
-            <button type="submit" class="btn btn-primary">Añadir</button>
-
+            <div class="row">
+                  <div class="col-6 col-md-3"></div>
+                  <div class="col-6 col-md-3 text-center">
+                        <button type="submit" class="btn btn-primary">Añadir</button>
+                  </div>
+                  <div class="col-6 col-md-3 text-center">
+                        <a class="btn btn-primary" href="/deportes/public/listadoDeportes">Lista de deportes</a>
+                  </div>
+                  
+                  <div class="col-6 col-md-3"></div>
+                </div> 
+            
             {!! Form::close() !!}
-            <h3><a href="/deportes/public/listadoDeportes">Lista de deportes</a></h3>
+          
         </div>
 
         <!--CONTENEDOR-->
         <div class="container">
             @yield('content')
-        </div>
-        
+        </div>        
         
     </body>
 </html>
